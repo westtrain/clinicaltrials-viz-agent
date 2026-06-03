@@ -1,0 +1,380 @@
+{
+    "visualization": {
+      "type": "grouped_bar_chart",
+      "title": "Phase Comparison: Pembrolizumab vs Nivolumab",
+      "encoding": {
+        "x": {
+          "field": "phase",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative"
+        },
+        "series": {
+          "field": "series",
+          "type": "nominal"
+        }
+      },
+      "data": [
+        {
+          "phase": "EARLY_PHASE1",
+          "series": "Pembrolizumab",
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT05488366",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: EARLY_PHASE1"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT05488366",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: EARLY_PHASE1",
+                "brief_title": "Immunotherapy Combined With Radiotherapy for Metastatic Sarcoma"
+              }
+            ]
+          }
+        },
+        {
+          "phase": "EARLY_PHASE1",
+          "series": "Nivolumab",
+          "trial_count": 0,
+          "citations": [],
+          "evidence": {
+            "supporting_record_count": 0,
+            "records": []
+          }
+        },
+        {
+          "phase": "PHASE1",
+          "series": "Pembrolizumab",
+          "trial_count": 5,
+          "citations": [
+            {
+              "nct_id": "NCT02528357",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE1"
+            },
+            {
+              "nct_id": "NCT04128423",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE1"
+            },
+            {
+              "nct_id": "NCT03092453",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE1"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 5,
+            "records": [
+              {
+                "nct_id": "NCT02528357",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE1",
+                "brief_title": "GSK3174998 Alone and With Pembrolizumab in Participants With Advanced Solid Tumors (ENGAGE-1)"
+              },
+              {
+                "nct_id": "NCT04128423",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE1",
+                "brief_title": "Study of AMV564 in Subjects With Advanced Solid Tumors"
+              },
+              {
+                "nct_id": "NCT03092453",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE1",
+                "brief_title": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+              },
+              {
+                "nct_id": "NCT03910660",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE1",
+                "brief_title": "A Trial of BXCL701 and Pembrolizumab in Patients With mCRPC Either Small Cell Neuroendocrine Prostate Cancer or Adenocarcinoma Phenotype."
+              },
+              {
+                "nct_id": "NCT04700072",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE1",
+                "brief_title": "Substudy 02D: Safety and Efficacy of Pembrolizumab in Combination With Investigational Agents or Pembrolizumab Alone in Participants With Melanoma Brain Metastasis (MK-3475-02D/KEYMAKER-U02)"
+              }
+            ]
+          }
+        },
+        {
+          "phase": "PHASE1",
+          "series": "Nivolumab",
+          "trial_count": 6,
+          "citations": [
+            {
+              "nct_id": "NCT04170556",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Nivolumab: PHASE1"
+            },
+            {
+              "nct_id": "NCT05187182",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Nivolumab: PHASE1"
+            },
+            {
+              "nct_id": "NCT06767956",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Nivolumab: PHASE1"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 6,
+            "records": [
+              {
+                "nct_id": "NCT04170556",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE1",
+                "brief_title": "Regorafenib Followed by Nivolumab in Patients With Hepatocellular Carcinoma (GOING)"
+              },
+              {
+                "nct_id": "NCT05187182",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE1",
+                "brief_title": "CA-4948 in Combination With FOLFOX/PD-1 Inhibitor +/- Trastuzumab for Untreated Unresectable Gastric and Esophageal Cancer"
+              },
+              {
+                "nct_id": "NCT06767956",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE1",
+                "brief_title": "Golcadomide and Nivolumab in Patients With Non-Hodgkin Lymphoma With Refractory Disease After Chimeric Antigen T-cell Therapy"
+              },
+              {
+                "nct_id": "NCT03351231",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE1",
+                "brief_title": "An Investigational Immuno-Therapy Study of Experimental Medication BMS-986242 Given in Combination With Nivolumab in Patients With Advanced Cancer"
+              },
+              {
+                "nct_id": "NCT03259529",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE1",
+                "brief_title": "Safety and Efficacy of Bendamustine, Gemcitabine, Rituximab, Nivolumab (BeGeRN) in Patients With r/r DLBCL"
+              },
+              {
+                "nct_id": "NCT03459222",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE1",
+                "brief_title": "An Investigational Study of Immunotherapy Combinations in Participants With Solid Cancers That Are Advanced or Have Spread"
+              }
+            ]
+          }
+        },
+        {
+          "phase": "PHASE2",
+          "series": "Pembrolizumab",
+          "trial_count": 4,
+          "citations": [
+            {
+              "nct_id": "NCT07176312",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE2"
+            },
+            {
+              "nct_id": "NCT03910660",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE2"
+            },
+            {
+              "nct_id": "NCT07027124",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE2"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 4,
+            "records": [
+              {
+                "nct_id": "NCT07176312",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE2",
+                "brief_title": "Zanidatamab in Combination With Pembrolizumab and Chemotherapy in HER2 and PD-L1 Positive Metastatic Gastroesophageal Adenocarcinoma (GEA) Patients"
+              },
+              {
+                "nct_id": "NCT03910660",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE2",
+                "brief_title": "A Trial of BXCL701 and Pembrolizumab in Patients With mCRPC Either Small Cell Neuroendocrine Prostate Cancer or Adenocarcinoma Phenotype."
+              },
+              {
+                "nct_id": "NCT07027124",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE2",
+                "brief_title": "Neoadjuvant ADT + Darolutamide With Pembrolizumab, Followed by Adjuvant Pembrolizumab in Molecularly Stratified High-Risk Prostate Cancer"
+              },
+              {
+                "nct_id": "NCT04700072",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE2",
+                "brief_title": "Substudy 02D: Safety and Efficacy of Pembrolizumab in Combination With Investigational Agents or Pembrolizumab Alone in Participants With Melanoma Brain Metastasis (MK-3475-02D/KEYMAKER-U02)"
+              }
+            ]
+          }
+        },
+        {
+          "phase": "PHASE2",
+          "series": "Nivolumab",
+          "trial_count": 9,
+          "citations": [
+            {
+              "nct_id": "NCT05136196",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Nivolumab: PHASE2"
+            },
+            {
+              "nct_id": "NCT04172402",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Nivolumab: PHASE2"
+            },
+            {
+              "nct_id": "NCT04170556",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Nivolumab: PHASE2"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 9,
+            "records": [
+              {
+                "nct_id": "NCT05136196",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "BiCaZO: A Study Combining Two Immunotherapies (Cabozantinib and Nivolumab) to Treat Patients With Advanced Melanoma or Squamous Cell Head and Neck Cancer, an immunoMATCH Pilot Study"
+              },
+              {
+                "nct_id": "NCT04172402",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "NGS as the First-line Treatment in Advanced Biliary Tract Cancer"
+              },
+              {
+                "nct_id": "NCT04170556",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "Regorafenib Followed by Nivolumab in Patients With Hepatocellular Carcinoma (GOING)"
+              },
+              {
+                "nct_id": "NCT03172624",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "Study of Nivolumab Plus Ipilimumab in Patients With Salivary Gland Cancer"
+              },
+              {
+                "nct_id": "NCT06767956",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "Golcadomide and Nivolumab in Patients With Non-Hodgkin Lymphoma With Refractory Disease After Chimeric Antigen T-cell Therapy"
+              },
+              {
+                "nct_id": "NCT03563729",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "Melanoma Metastasized to the Brain and Steroids"
+              },
+              {
+                "nct_id": "NCT03351231",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "An Investigational Immuno-Therapy Study of Experimental Medication BMS-986242 Given in Combination With Nivolumab in Patients With Advanced Cancer"
+              },
+              {
+                "nct_id": "NCT03259529",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "Safety and Efficacy of Bendamustine, Gemcitabine, Rituximab, Nivolumab (BeGeRN) in Patients With r/r DLBCL"
+              },
+              {
+                "nct_id": "NCT03459222",
+                "field": "protocolSection.designModule.phases",
+                "value": "Nivolumab: PHASE2",
+                "brief_title": "An Investigational Study of Immunotherapy Combinations in Participants With Solid Cancers That Are Advanced or Have Spread"
+              }
+            ]
+          }
+        },
+        {
+          "phase": "PHASE3",
+          "series": "Pembrolizumab",
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT04882241",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE3"
+            },
+            {
+              "nct_id": "NCT06790966",
+              "field": "protocolSection.designModule.phases",
+              "excerpt": "Pembrolizumab: PHASE3"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT04882241",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE3",
+                "brief_title": "Study of Pembrolizumab (MK-3475) Plus Chemotherapy Versus Placebo Plus Chemotherapy in Participants With Gastric or Gastroesophageal Junction (GEJ) Adenocarcinoma (MK-3475-585/KEYNOTE-585)-China Extension"
+              },
+              {
+                "nct_id": "NCT06790966",
+                "field": "protocolSection.designModule.phases",
+                "value": "Pembrolizumab: PHASE3",
+                "brief_title": "Phase 3 Study of PDS0101 and Pembrolizumab in HPV16+ Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma"
+              }
+            ]
+          }
+        },
+        {
+          "phase": "PHASE3",
+          "series": "Nivolumab",
+          "trial_count": 0,
+          "citations": [],
+          "evidence": {
+            "supporting_record_count": 0,
+            "records": []
+          }
+        }
+      ]
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "query_interpretation": {
+        "intent": "comparison",
+        "visualization_type": "grouped_bar_chart",
+        "filters": {
+          "drug_name": "Pembrolizumab",
+          "compare_drug_name": "Nivolumab",
+          "condition": null,
+          "trial_phase": null,
+          "sponsor": null,
+          "country": null,
+          "start_year": null,
+          "end_year": null,
+          "overall_status": null,
+          "max_studies": 10
+        },
+        "planner": "llm"
+      },
+      "study_count": {
+        "None": 10
+      },
+      "citation_policy": "Each aggregated datum includes up to 3 compact representative citations and full evidence records within the retrieved max_studies dataset.",
+      "limitations": [
+        "Counts are computed from studies returned by the ClinicalTrials.gov API.",
+        "The current planner uses deterministic rules to reduce hallucination risk.",
+        "Compact citations are capped, while evidence records provide full traceability within the retrieved dataset."
+      ]
+    }
+  }

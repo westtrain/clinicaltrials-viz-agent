@@ -1,0 +1,329 @@
+{
+    "visualization": {
+      "type": "bar_chart",
+      "title": "Trials for Breast Cancer by Country",
+      "encoding": {
+        "x": {
+          "field": "country",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative"
+        }
+      },
+      "data": [
+        {
+          "country": "United States",
+          "trial_count": 7,
+          "citations": [
+            {
+              "nct_id": "NCT07459673",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "United States"
+            },
+            {
+              "nct_id": "NCT07318805",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "United States"
+            },
+            {
+              "nct_id": "NCT07318051",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "United States"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 7,
+            "records": [
+              {
+                "nct_id": "NCT07459673",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "United States",
+                "brief_title": "HERizon-Breast: A ctDNA-Guided Adaptive Study of Sequential Anti-HER2 Therapies and CNS Prophylaxis to Induce Long-Term Remission"
+              },
+              {
+                "nct_id": "NCT07318805",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "United States",
+                "brief_title": "A Study to Learn About the Study Medicine Called PF-08032562 in People With Advanced or Metastatic Solid Tumors"
+              },
+              {
+                "nct_id": "NCT07318051",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "United States",
+                "brief_title": "Sample Collection for Ongoing Research and Product Evaluation Study"
+              },
+              {
+                "nct_id": "NCT06923527",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "United States",
+                "brief_title": "Circulating Tumor DNA"
+              },
+              {
+                "nct_id": "NCT06695845",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "United States",
+                "brief_title": "A Phase 2 Study of Zanidatamab in Patients With HER2-expressing Tumors"
+              },
+              {
+                "nct_id": "NCT06580002",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "United States",
+                "brief_title": "Repurposing Riluzole for Cancer-Related Cognitive Impairment: A Pilot Trial"
+              },
+              {
+                "nct_id": "NCT04074720",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "United States",
+                "brief_title": "Prospective Breast Cancer Biospecimen Collection"
+              }
+            ]
+          }
+        },
+        {
+          "country": "China",
+          "trial_count": 6,
+          "citations": [
+            {
+              "nct_id": "NCT06401005",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "China"
+            },
+            {
+              "nct_id": "NCT05447702",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "China"
+            },
+            {
+              "nct_id": "NCT04501523",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "China"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 6,
+            "records": [
+              {
+                "nct_id": "NCT06401005",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "China",
+                "brief_title": "SBRT, Chemotherapy, and AK104 Neoadjuvant Therapy for Triple-negative Breast Cancer (TNBC)"
+              },
+              {
+                "nct_id": "NCT05447702",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "China",
+                "brief_title": "Study of Camrelizumab Plus Apatinib and Chemotherapy as Neoadjuvant Therapy in Participants With Triple Negative Breast Cancer (TNBC)"
+              },
+              {
+                "nct_id": "NCT04501523",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "China",
+                "brief_title": "A Prospective, Phase II Trial Using ctDNA to Initiate Post-operation Boost Therapy After NAC in TNBC"
+              },
+              {
+                "nct_id": "NCT07476170",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "China",
+                "brief_title": "Real-World Treatment Pattern and Clinical Outcome With Influential Factors of HR+/HER2-aBC 1L Patients in China"
+              },
+              {
+                "nct_id": "NCT06195202",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "China",
+                "brief_title": "Serum Estradiol (E2) Levels in Breast Cancer Patients During Endocrine Therapy by High Performance Liquid Chromatography-tandem Mass Spectrometry (LC-MS /MS)"
+              },
+              {
+                "nct_id": "NCT07285382",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "China",
+                "brief_title": "Different Doses of Dalpicicl Combined With Letrozole in the First-line Treatment of HR-positive, HER2-negative Advanced Breast Cancer"
+              }
+            ]
+          }
+        },
+        {
+          "country": "Netherlands",
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT07178886",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "Netherlands"
+            },
+            {
+              "nct_id": "NCT04486495",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "Netherlands"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT07178886",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "Netherlands",
+                "brief_title": "Breast Reconstruction and Radiotherapy"
+              },
+              {
+                "nct_id": "NCT04486495",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "Netherlands",
+                "brief_title": "Minimal Invasive Axillary Staging and Treatment After Neoadjuvant Systemic Therapy in Node Positive Breast Cancer"
+              }
+            ]
+          }
+        },
+        {
+          "country": "South Korea",
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT07405931",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "South Korea"
+            },
+            {
+              "nct_id": "NCT06695845",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "South Korea"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT07405931",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "South Korea",
+                "brief_title": "Evaluation of the Effectiveness of Managing Chemotherapy Side Effects Using ePRO and a Standardized Telenursing Program for Cancer Patients"
+              },
+              {
+                "nct_id": "NCT06695845",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "South Korea",
+                "brief_title": "A Phase 2 Study of Zanidatamab in Patients With HER2-expressing Tumors"
+              }
+            ]
+          }
+        },
+        {
+          "country": "Taiwan",
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT07378319",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "Taiwan"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT07378319",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "Taiwan",
+                "brief_title": "Dextrose Hydrodissection for Post-Breast Cancer Chest Wall and Axillary Tightness."
+              }
+            ]
+          }
+        },
+        {
+          "country": "Italy",
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT07257679",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "Italy"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT07257679",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "Italy",
+                "brief_title": "Gentle Touch for Post-Mastectomy Lymphedema"
+              }
+            ]
+          }
+        },
+        {
+          "country": "Australia",
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT06305962",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "Australia"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT06305962",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "Australia",
+                "brief_title": "177Lu-anti-PD-L1 sdAb in Metastatic Solid Tumors"
+              }
+            ]
+          }
+        },
+        {
+          "country": "Malaysia",
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT06566937",
+              "field": "protocolSection.contactsLocationsModule.locations.country",
+              "excerpt": "Malaysia"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT06566937",
+                "field": "protocolSection.contactsLocationsModule.locations.country",
+                "value": "Malaysia",
+                "brief_title": "The Effectiveness of E-health Intervention in Improving Mental Health Outcomes Among Breast Cancer Patients"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "query_interpretation": {
+        "intent": "geographic_distribution",
+        "visualization_type": "bar_chart",
+        "filters": {
+          "drug_name": null,
+          "compare_drug_name": null,
+          "condition": "Breast Cancer",
+          "trial_phase": null,
+          "sponsor": null,
+          "country": null,
+          "start_year": null,
+          "end_year": null,
+          "overall_status": "RECRUITING",
+          "max_studies": 20
+        },
+        "planner": "rule_based_forced"
+      },
+      "study_count": 20,
+      "citation_policy": "Each aggregated datum includes up to 3 compact representative citations and full evidence records within the retrieved max_studies dataset.",
+      "limitations": [
+        "Counts are computed from studies returned by the ClinicalTrials.gov API.",
+        "The current planner uses deterministic rules to reduce hallucination risk.",
+        "Compact citations are capped, while evidence records provide full traceability within the retrieved dataset."
+      ]
+    }
+  }

@@ -1,0 +1,243 @@
+{
+    "visualization": {
+      "type": "time_series",
+      "title": "Trials for Pembrolizumab by Start Year",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative"
+        }
+      },
+      "data": [
+        {
+          "year": 2015,
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT02528357",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2015"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT02528357",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2015",
+                "brief_title": "GSK3174998 Alone and With Pembrolizumab in Participants With Advanced Solid Tumors (ENGAGE-1)"
+              }
+            ]
+          }
+        },
+        {
+          "year": 2017,
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT03092453",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2017"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT03092453",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2017",
+                "brief_title": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+              }
+            ]
+          }
+        },
+        {
+          "year": 2019,
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT04128423",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2019"
+            },
+            {
+              "nct_id": "NCT03910660",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2019"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT04128423",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2019",
+                "brief_title": "Study of AMV564 in Subjects With Advanced Solid Tumors"
+              },
+              {
+                "nct_id": "NCT03910660",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2019",
+                "brief_title": "A Trial of BXCL701 and Pembrolizumab in Patients With mCRPC Either Small Cell Neuroendocrine Prostate Cancer or Adenocarcinoma Phenotype."
+              }
+            ]
+          }
+        },
+        {
+          "year": 2020,
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT04882241",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2020"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT04882241",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2020",
+                "brief_title": "Study of Pembrolizumab (MK-3475) Plus Chemotherapy Versus Placebo Plus Chemotherapy in Participants With Gastric or Gastroesophageal Junction (GEJ) Adenocarcinoma (MK-3475-585/KEYNOTE-585)-China Extension"
+              }
+            ]
+          }
+        },
+        {
+          "year": 2021,
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT04700072",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2021"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT04700072",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2021",
+                "brief_title": "Substudy 02D: Safety and Efficacy of Pembrolizumab in Combination With Investigational Agents or Pembrolizumab Alone in Participants With Melanoma Brain Metastasis (MK-3475-02D/KEYMAKER-U02)"
+              }
+            ]
+          }
+        },
+        {
+          "year": 2022,
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT05488366",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2022"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT05488366",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2022",
+                "brief_title": "Immunotherapy Combined With Radiotherapy for Metastatic Sarcoma"
+              }
+            ]
+          }
+        },
+        {
+          "year": 2025,
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT06790966",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2025"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT06790966",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2025",
+                "brief_title": "Phase 3 Study of PDS0101 and Pembrolizumab in HPV16+ Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma"
+              }
+            ]
+          }
+        },
+        {
+          "year": 2026,
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT07176312",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2026"
+            },
+            {
+              "nct_id": "NCT07027124",
+              "field": "protocolSection.statusModule.startDateStruct.date",
+              "excerpt": "2026"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT07176312",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2026",
+                "brief_title": "Zanidatamab in Combination With Pembrolizumab and Chemotherapy in HER2 and PD-L1 Positive Metastatic Gastroesophageal Adenocarcinoma (GEA) Patients"
+              },
+              {
+                "nct_id": "NCT07027124",
+                "field": "protocolSection.statusModule.startDateStruct.date",
+                "value": "2026",
+                "brief_title": "Neoadjuvant ADT + Darolutamide With Pembrolizumab, Followed by Adjuvant Pembrolizumab in Molecularly Stratified High-Risk Prostate Cancer"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "query_interpretation": {
+        "intent": "time_trend",
+        "visualization_type": "time_series",
+        "filters": {
+          "drug_name": "Pembrolizumab",
+          "compare_drug_name": null,
+          "condition": null,
+          "trial_phase": null,
+          "sponsor": null,
+          "country": null,
+          "start_year": 2015,
+          "end_year": null,
+          "overall_status": null,
+          "max_studies": 10
+        },
+        "planner": "llm"
+      },
+      "study_count": 10,
+      "citation_policy": "Each aggregated datum includes up to 3 compact representative citations and full evidence records within the retrieved max_studies dataset.",
+      "limitations": [
+        "Counts are computed from studies returned by the ClinicalTrials.gov API.",
+        "The current planner uses deterministic rules to reduce hallucination risk.",
+        "Compact citations are capped, while evidence records provide full traceability within the retrieved dataset."
+      ]
+    }
+  }

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClinicalTrials.gov Visualization Demo</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/dist/vis-network.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/styles/vis-network.min.css"
+  />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+      background: #f7f7f8;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 180px;
+      font-family: monospace;
+      font-size: 14px;
+      padding: 12px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .card {
+      margin-top: 24px;
+      padding: 20px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    #chartCanvas {
+      max-height: 480px;
+    }
+
+    #network {
+      width: 100%;
+      height: 520px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: none;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #111827;
+      color: #f9fafb;
+      padding: 16px;
+      border-radius: 8px;
+      overflow: auto;
+      max-height: 420px;
+    }
+
+    .error {
+      color: #b91c1c;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    .meta {
+      color: #555;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ClinicalTrials.gov Query-to-Visualization Demo</h1>
+    <div class="subtitle">
+      This demo calls the FastAPI backend and renders the returned visualization specification.
+    </div>
+
+    <div class="card">
+      <h2>Request JSON</h2>
+      <textarea id="requestInput">{
+  "query": "How are lung cancer trials distributed across phases?",
+  "condition": "Lung Cancer",
+  "use_llm": false,
+  "max_studies": 20
+}</textarea>
+      <br />
+      <button onclick="runQuery()">Generate Visualization</button>
+      <div id="error" class="error"></div>
+    </div>
+
+    <div class="card">
+      <h2 id="chartTitle">Visualization</h2>
+      <div id="chartMeta" class="meta"></div>
+      <canvas id="chartCanvas"></canvas>
+      <div id="network"></div>
+    </div>
+
+    <div class="card">
+      <h2>Raw Response</h2>
+      <pre id="rawResponse">{}</pre>
+    </div>
+  </div>
+
+  <script>
+    let chartInstance = null;
+    let networkInstance = null;
+
+    async function runQuery() {
+      const errorEl = document.getElementById("error");
+      const rawEl = document.getElementById("rawResponse");
+      errorEl.textContent = "";
+
+      let requestBody;
+
+      try {
+        requestBody = JSON.parse(document.getElementById("requestInput").value);
+      } catch (error) {
+        errorEl.textContent = "Invalid JSON request.";
+        return;
+      }
+
+      try {
+        const response = await fetch("http://127.0.0.1:8000/visualize", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(requestBody)
+        });
+
+        const payload = await response.json();
+        rawEl.textContent = JSON.stringify(payload, null, 2);
+
+        if (!response.ok) {
+          errorEl.textContent = payload.detail || "Request failed.";
+          return;
+        }
+
+        renderVisualization(payload);
+      } catch (error) {
+        errorEl.textContent =
+          "Failed to call backend. Make sure FastAPI is running at http://127.0.0.1:8000";
+      }
+    }
+
+    function resetRenderTargets() {
+      const canvas = document.getElementById("chartCanvas");
+      const network = document.getElementById("network");
+
+      if (chartInstance) {
+        chartInstance.destroy();
+        chartInstance = null;
+      }
+
+      if (networkInstance) {
+        networkInstance.destroy();
+        networkInstance = null;
+      }
+
+      canvas.style.display = "block";
+      network.style.display = "none";
+    }
+
+    function renderVisualization(payload) {
+      resetRenderTargets();
+
+      const visualization = payload.visualization;
+      const meta = payload.meta || {};
+
+      document.getElementById("chartTitle").textContent =
+        visualization.title || "Visualization";
+
+      document.getElementById("chartMeta").textContent =
+        `Type: ${visualization.type} | Source: ${meta.source || "unknown"}`;
+
+      if (visualization.type === "unsupported") {
+        renderUnsupported(payload);
+        return;
+      }
+
+      if (visualization.type === "network_graph") {
+        renderNetworkGraph(visualization);
+        return;
+      }
+
+      if (visualization.type === "time_series") {
+        renderTimeSeries(visualization);
+        return;
+      }
+
+      if (visualization.type === "grouped_bar_chart") {
+        renderGroupedBarChart(visualization);
+        return;
+      }
+
+      if (visualization.type === "bar_chart") {
+        renderBarChart(visualization);
+        return;
+      }
+
+      document.getElementById("error").textContent =
+        `Unsupported visualization type in demo: ${visualization.type}`;
+    }
+
+    function renderUnsupported(payload) {
+      const canvas = document.getElementById("chartCanvas");
+      const ctx = canvas.getContext("2d");
+
+      chartInstance = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Unsupported"],
+          datasets: [
+            {
+              label: "No data",
+              data: [0]
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: {
+              display: true,
+              text: payload.meta?.reason || "Unsupported query"
+            }
+          }
+        }
+      });
+    }
+
+    function renderBarChart(visualization) {
+      const data = visualization.data || [];
+      const xField = visualization.encoding?.x?.field;
+      const yField = visualization.encoding?.y?.field;
+
+      const labels = data.map((row) => String(row[xField]));
+      const values = data.map((row) => row[yField]);
+
+      const ctx = document.getElementById("chartCanvas").getContext("2d");
+
+      chartInstance = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: yField,
+              data: values
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: true
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function renderTimeSeries(visualization) {
+      const data = visualization.data || [];
+      const xField = visualization.encoding?.x?.field;
+      const yField = visualization.encoding?.y?.field;
+
+      const labels = data.map((row) => String(row[xField]));
+      const values = data.map((row) => row[yField]);
+
+      const ctx = document.getElementById("chartCanvas").getContext("2d");
+
+      chartInstance = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels,
+          datasets: [
+            {
+              label: yField,
+              data: values,
+              tension: 0.25
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: true
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function renderGroupedBarChart(visualization) {
+      const data = visualization.data || [];
+      const xField = visualization.encoding?.x?.field;
+      const yField = visualization.encoding?.y?.field;
+      const seriesField = visualization.encoding?.series?.field;
+
+      const labels = [...new Set(data.map((row) => row[xField]))];
+      const seriesNames = [...new Set(data.map((row) => row[seriesField]))];
+
+      const datasets = seriesNames.map((seriesName) => {
+        return {
+          label: seriesName,
+          data: labels.map((label) => {
+            const match = data.find(
+              (row) => row[xField] === label && row[seriesField] === seriesName
+            );
+            return match ? match[yField] : 0;
+          })
+        };
+      });
+
+      const ctx = document.getElementById("chartCanvas").getContext("2d");
+
+      chartInstance = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels,
+          datasets
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: true
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function renderNetworkGraph(visualization) {
+      const canvas = document.getElementById("chartCanvas");
+      const networkEl = document.getElementById("network");
+
+      canvas.style.display = "none";
+      networkEl.style.display = "block";
+
+      const nodes = new vis.DataSet(
+        (visualization.data.nodes || []).map((node) => ({
+          id: node.id,
+          label: node.label,
+          group: node.type
+        }))
+      );
+
+      const edges = new vis.DataSet(
+        (visualization.data.edges || []).map((edge) => ({
+          from: edge.source,
+          to: edge.target,
+          value: edge.weight,
+          title: `Weight: ${edge.weight}`
+        }))
+      );
+
+      const options = {
+        nodes: {
+          shape: "dot",
+          size: 16,
+          font: {
+            size: 14
+          }
+        },
+        edges: {
+          arrows: {
+            to: {
+              enabled: false
+            }
+          },
+          smooth: true
+        },
+        physics: {
+          stabilization: true
+        },
+        groups: {
+          sponsor: {
+            shape: "box"
+          },
+          drug: {
+            shape: "dot"
+          }
+        }
+      };
+
+      networkInstance = new vis.Network(networkEl, { nodes, edges }, options);
+    }
+  </script>
+</body>
+</html>

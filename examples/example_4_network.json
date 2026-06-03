@@ -1,0 +1,656 @@
+{
+    "visualization": {
+      "type": "network_graph",
+      "title": "Sponsor-Drug Network for Melanoma",
+      "encoding": {
+        "nodes": {
+          "id": "id",
+          "label": "label",
+          "group": "type"
+        },
+        "edges": {
+          "source": "source",
+          "target": "target",
+          "weight": "weight"
+        }
+      },
+      "data": {
+        "nodes": [
+          {
+            "id": "sponsor::Paola Queirolo",
+            "label": "Paola Queirolo",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::Fotemustine + Vemurafenib",
+            "label": "Fotemustine + Vemurafenib",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::NRG Oncology",
+            "label": "NRG Oncology",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::Memantine",
+            "label": "Memantine",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::University of Pennsylvania",
+            "label": "University of Pennsylvania",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::Mature dendritic cell (DC) vaccine",
+            "label": "Mature dendritic cell (DC) vaccine",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Cyclophosphamide 300mg/m^2",
+            "label": "Cyclophosphamide 300mg/m^2",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Pembrolizumab",
+            "label": "Pembrolizumab",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::National Cancer Institute (NCI)",
+            "label": "National Cancer Institute (NCI)",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::Cabozantinib S-malate",
+            "label": "Cabozantinib S-malate",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Nivolumab",
+            "label": "Nivolumab",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::University of California, San Francisco",
+            "label": "University of California, San Francisco",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::Dabrafenib",
+            "label": "Dabrafenib",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Trametinib",
+            "label": "Trametinib",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::Novartis Pharmaceuticals",
+            "label": "Novartis Pharmaceuticals",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::LGK974",
+            "label": "LGK974",
+            "type": "drug"
+          },
+          {
+            "id": "drug::PDR001",
+            "label": "PDR001",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::Centre Hospitalier Universitaire Vaudois",
+            "label": "Centre Hospitalier Universitaire Vaudois",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::NY-ESO-1 TCR redirected autologous T cell product",
+            "label": "NY-ESO-1 TCR redirected autologous T cell product",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Non-myeloablative lymphodepleting chemotherapy",
+            "label": "Non-myeloablative lymphodepleting chemotherapy",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::Merck Sharp & Dohme LLC",
+            "label": "Merck Sharp & Dohme LLC",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::Pembrolizumab/Quavonlimab",
+            "label": "Pembrolizumab/Quavonlimab",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Lenvatinib",
+            "label": "Lenvatinib",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::Lynn E. Spitler, MD",
+            "label": "Lynn E. Spitler, MD",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::Avastin",
+            "label": "Avastin",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Abraxane",
+            "label": "Abraxane",
+            "type": "drug"
+          },
+          {
+            "id": "sponsor::HiFiBiO Therapeutics",
+            "label": "HiFiBiO Therapeutics",
+            "type": "sponsor"
+          },
+          {
+            "id": "drug::HFB200301",
+            "label": "HFB200301",
+            "type": "drug"
+          },
+          {
+            "id": "drug::Tislelizumab",
+            "label": "Tislelizumab",
+            "type": "drug"
+          }
+        ],
+        "edges": [
+          {
+            "source": "sponsor::Paola Queirolo",
+            "target": "drug::Fotemustine + Vemurafenib",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT01983124",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Paola Queirolo -> Fotemustine + Vemurafenib"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT01983124",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Paola Queirolo -> Fotemustine + Vemurafenib",
+                  "brief_title": "Vemurafenib + Fotemustine to Treat Advanced Melanoma Patients With V600BRAF Mutation Recurred While on Vemurafenib"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::NRG Oncology",
+            "target": "drug::Memantine",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT04588246",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "NRG Oncology -> Memantine"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT04588246",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "NRG Oncology -> Memantine",
+                  "brief_title": "Comparing Whole Brain Radiotherapy Using a Technique That Avoids the Hippocampus to Stereotactic Radiosurgery in Patients With Cancer That Has Spread to the Brain and Come Back in Other Areas of the Brain After Earlier Stereotactic Radiosurgery"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::University of Pennsylvania",
+            "target": "drug::Mature dendritic cell (DC) vaccine",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT03092453",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "University of Pennsylvania -> Mature dendritic cell (DC) vaccine"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT03092453",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "University of Pennsylvania -> Mature dendritic cell (DC) vaccine",
+                  "brief_title": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::University of Pennsylvania",
+            "target": "drug::Cyclophosphamide 300mg/m^2",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT03092453",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "University of Pennsylvania -> Cyclophosphamide 300mg/m^2"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT03092453",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "University of Pennsylvania -> Cyclophosphamide 300mg/m^2",
+                  "brief_title": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::University of Pennsylvania",
+            "target": "drug::Pembrolizumab",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT03092453",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "University of Pennsylvania -> Pembrolizumab"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT03092453",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "University of Pennsylvania -> Pembrolizumab",
+                  "brief_title": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::National Cancer Institute (NCI)",
+            "target": "drug::Cabozantinib S-malate",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT05136196",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "National Cancer Institute (NCI) -> Cabozantinib S-malate"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT05136196",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "National Cancer Institute (NCI) -> Cabozantinib S-malate",
+                  "brief_title": "BiCaZO: A Study Combining Two Immunotherapies (Cabozantinib and Nivolumab) to Treat Patients With Advanced Melanoma or Squamous Cell Head and Neck Cancer, an immunoMATCH Pilot Study"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::National Cancer Institute (NCI)",
+            "target": "drug::Nivolumab",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT05136196",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "National Cancer Institute (NCI) -> Nivolumab"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT05136196",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "National Cancer Institute (NCI) -> Nivolumab",
+                  "brief_title": "BiCaZO: A Study Combining Two Immunotherapies (Cabozantinib and Nivolumab) to Treat Patients With Advanced Melanoma or Squamous Cell Head and Neck Cancer, an immunoMATCH Pilot Study"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::University of California, San Francisco",
+            "target": "drug::Dabrafenib",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT01721603",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "University of California, San Francisco -> Dabrafenib"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT01721603",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "University of California, San Francisco -> Dabrafenib",
+                  "brief_title": "Dabrafenib and Trametinib With Radiosurgery in Melanoma Brain Mets"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::University of California, San Francisco",
+            "target": "drug::Trametinib",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT01721603",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "University of California, San Francisco -> Trametinib"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT01721603",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "University of California, San Francisco -> Trametinib",
+                  "brief_title": "Dabrafenib and Trametinib With Radiosurgery in Melanoma Brain Mets"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Novartis Pharmaceuticals",
+            "target": "drug::LGK974",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT01351103",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Novartis Pharmaceuticals -> LGK974"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT01351103",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Novartis Pharmaceuticals -> LGK974",
+                  "brief_title": "A Study of LGK974 in Patients With Malignancies Dependent on Wnt Ligands"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Novartis Pharmaceuticals",
+            "target": "drug::PDR001",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT01351103",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Novartis Pharmaceuticals -> PDR001"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT01351103",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Novartis Pharmaceuticals -> PDR001",
+                  "brief_title": "A Study of LGK974 in Patients With Malignancies Dependent on Wnt Ligands"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Centre Hospitalier Universitaire Vaudois",
+            "target": "drug::NY-ESO-1 TCR redirected autologous T cell product",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT06889766",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Centre Hospitalier Universitaire Vaudois -> NY-ESO-1 TCR redirected autologous T cell product"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT06889766",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Centre Hospitalier Universitaire Vaudois -> NY-ESO-1 TCR redirected autologous T cell product",
+                  "brief_title": "NY-ESO-1-redirected T Cells in Patients With Advanced Melanoma and Sarcoma"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Centre Hospitalier Universitaire Vaudois",
+            "target": "drug::Non-myeloablative lymphodepleting chemotherapy",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT06889766",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Centre Hospitalier Universitaire Vaudois -> Non-myeloablative lymphodepleting chemotherapy"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT06889766",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Centre Hospitalier Universitaire Vaudois -> Non-myeloablative lymphodepleting chemotherapy",
+                  "brief_title": "NY-ESO-1-redirected T Cells in Patients With Advanced Melanoma and Sarcoma"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Merck Sharp & Dohme LLC",
+            "target": "drug::Pembrolizumab",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT04700072",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Merck Sharp & Dohme LLC -> Pembrolizumab"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT04700072",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Merck Sharp & Dohme LLC -> Pembrolizumab",
+                  "brief_title": "Substudy 02D: Safety and Efficacy of Pembrolizumab in Combination With Investigational Agents or Pembrolizumab Alone in Participants With Melanoma Brain Metastasis (MK-3475-02D/KEYMAKER-U02)"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Merck Sharp & Dohme LLC",
+            "target": "drug::Pembrolizumab/Quavonlimab",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT04700072",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Merck Sharp & Dohme LLC -> Pembrolizumab/Quavonlimab"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT04700072",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Merck Sharp & Dohme LLC -> Pembrolizumab/Quavonlimab",
+                  "brief_title": "Substudy 02D: Safety and Efficacy of Pembrolizumab in Combination With Investigational Agents or Pembrolizumab Alone in Participants With Melanoma Brain Metastasis (MK-3475-02D/KEYMAKER-U02)"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Merck Sharp & Dohme LLC",
+            "target": "drug::Lenvatinib",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT04700072",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Merck Sharp & Dohme LLC -> Lenvatinib"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT04700072",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Merck Sharp & Dohme LLC -> Lenvatinib",
+                  "brief_title": "Substudy 02D: Safety and Efficacy of Pembrolizumab in Combination With Investigational Agents or Pembrolizumab Alone in Participants With Melanoma Brain Metastasis (MK-3475-02D/KEYMAKER-U02)"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Lynn E. Spitler, MD",
+            "target": "drug::Avastin",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT00462423",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Lynn E. Spitler, MD -> Avastin"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT00462423",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Lynn E. Spitler, MD -> Avastin",
+                  "brief_title": "Abraxane and Avastin as Therapy for Patients With Malignant Melanoma, a Phase II Study"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::Lynn E. Spitler, MD",
+            "target": "drug::Abraxane",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT00462423",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "Lynn E. Spitler, MD -> Abraxane"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT00462423",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "Lynn E. Spitler, MD -> Abraxane",
+                  "brief_title": "Abraxane and Avastin as Therapy for Patients With Malignant Melanoma, a Phase II Study"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::HiFiBiO Therapeutics",
+            "target": "drug::HFB200301",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT05238883",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "HiFiBiO Therapeutics -> HFB200301"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT05238883",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "HiFiBiO Therapeutics -> HFB200301",
+                  "brief_title": "A Study of HFB200301 as a Single Agent and in Combination With Tislelizumab in Adult Patients With Advanced Solid Tumors"
+                }
+              ]
+            }
+          },
+          {
+            "source": "sponsor::HiFiBiO Therapeutics",
+            "target": "drug::Tislelizumab",
+            "weight": 1,
+            "citations": [
+              {
+                "nct_id": "NCT05238883",
+                "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                "excerpt": "HiFiBiO Therapeutics -> Tislelizumab"
+              }
+            ],
+            "evidence": {
+              "supporting_record_count": 1,
+              "records": [
+                {
+                  "nct_id": "NCT05238883",
+                  "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name + protocolSection.armsInterventionsModule.interventions.name",
+                  "value": "HiFiBiO Therapeutics -> Tislelizumab",
+                  "brief_title": "A Study of HFB200301 as a Single Agent and in Combination With Tislelizumab in Adult Patients With Advanced Solid Tumors"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "query_interpretation": {
+        "intent": "sponsor_drug_network",
+        "visualization_type": "network_graph",
+        "filters": {
+          "drug_name": null,
+          "compare_drug_name": null,
+          "condition": "Melanoma",
+          "trial_phase": null,
+          "sponsor": null,
+          "country": null,
+          "start_year": null,
+          "end_year": null,
+          "overall_status": null,
+          "max_studies": 20
+        },
+        "planner": "rule_based_forced"
+      },
+      "study_count": 20,
+      "citation_policy": "Each aggregated datum includes up to 3 compact representative citations and full evidence records within the retrieved max_studies dataset.",
+      "limitations": [
+        "Counts are computed from studies returned by the ClinicalTrials.gov API.",
+        "The current planner uses deterministic rules to reduce hallucination risk.",
+        "Compact citations are capped, while evidence records provide full traceability within the retrieved dataset."
+      ]
+    }
+  }

@@ -1,0 +1,38 @@
+{
+    "visualization": {
+      "type": "unsupported",
+      "title": "Unsupported query",
+      "encoding": {},
+      "data": []
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "query_interpretation": {
+        "intent": "unsupported",
+        "visualization_type": "unsupported",
+        "filters": {
+          "drug_name": null,
+          "compare_drug_name": null,
+          "condition": null,
+          "trial_phase": null,
+          "sponsor": null,
+          "country": null,
+          "start_year": null,
+          "end_year": null,
+          "overall_status": null,
+          "max_studies": 10
+        },
+        "planner": "rule_based_scope_guard"
+      },
+      "study_count": 0,
+      "reason": "This service only supports visualization queries based on ClinicalTrials.gov clinical trial data.",
+      "supported_query_types": [
+        "time_trend",
+        "phase_distribution",
+        "intervention_type_distribution",
+        "geographic_distribution",
+        "sponsor_drug_network",
+        "comparison"
+      ]
+    }
+  }

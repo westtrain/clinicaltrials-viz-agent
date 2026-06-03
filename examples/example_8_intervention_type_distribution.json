@@ -1,0 +1,353 @@
+{
+    "visualization": {
+      "type": "bar_chart",
+      "title": "Intervention Types for Lung Cancer Trials",
+      "encoding": {
+        "x": {
+          "field": "intervention_type",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative"
+        }
+      },
+      "data": [
+        {
+          "intervention_type": "DRUG",
+          "trial_count": 13,
+          "citations": [
+            {
+              "nct_id": "NCT00047242",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "DRUG"
+            },
+            {
+              "nct_id": "NCT04607954",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "DRUG"
+            },
+            {
+              "nct_id": "NCT00413322",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "DRUG"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 13,
+            "records": [
+              {
+                "nct_id": "NCT00047242",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "UCN-01 and Irinotecan in Treating Patients With Advanced Solid Tumors"
+              },
+              {
+                "nct_id": "NCT04607954",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Durvalumab and Lurbinectedin for the Treatment of Relapsed or Refractory Small Cell Lung Cancer"
+              },
+              {
+                "nct_id": "NCT00413322",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Study of PXD101 Alone and in Combination With 5-Fluorouracil (5-FU) in Patients With Advanced Solid Tumors"
+              },
+              {
+                "nct_id": "NCT02088645",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "177Lu-PP-F11N for Receptor Targeted Therapy and Imaging of Metastatic Thyroid Cancer."
+              },
+              {
+                "nct_id": "NCT02528357",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "GSK3174998 Alone and With Pembrolizumab in Participants With Advanced Solid Tumors (ENGAGE-1)"
+              },
+              {
+                "nct_id": "NCT06182800",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Adebrelimab Combined With Bevacizumab and Docetaxel for Advanced Non-Squamous Non-small Cell Lung Cancer After Progression on First-line Immunotherapy"
+              },
+              {
+                "nct_id": "NCT02148380",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Combination of Chemotherapy and Gefitinib as First-line Treatment"
+              },
+              {
+                "nct_id": "NCT01822496",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Erlotinib Hydrochloride or Crizotinib and Chemoradiation Therapy in Treating Patients With Stage III Non-small Cell Lung Cancer"
+              },
+              {
+                "nct_id": "NCT04671303",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "To Evaluate the Efficacy and Safety of Anlotinib Combined With Furmonertinib Mesylate in Lung Cancer"
+              },
+              {
+                "nct_id": "NCT06721286",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Toripalimab Combined With Gemcitabine and Cisplatin (GemCis) as Preoperative Neoadjuvant Therapy for Resectable Intrahepatic Cholangiocarcinoma"
+              },
+              {
+                "nct_id": "NCT01836341",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Afatinib In Combination With Cisplatin Or Carboplatin + Pemetrexed In Patients With EGFR-Mutant Lung Cancers Undergoing Definitive Chemoradiation"
+              },
+              {
+                "nct_id": "NCT01124253",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "Adjuvant Vinorelbine Plus Cisplatin(NP) Versus NP Plus Endostar in Patients With Completely Resected Stage IB-IIIA Non-small Cell Lung Cancer(NSCLC)"
+              },
+              {
+                "nct_id": "NCT05353257",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "DRUG",
+                "brief_title": "A Study to Evaluate the Efficacy and Safety of Serplulimab in Combination With Chemotherapy and Concurrent Radiotherapy in Patients With Limited-Stage Small Cell Lung Cancer"
+              }
+            ]
+          }
+        },
+        {
+          "intervention_type": "RADIATION",
+          "trial_count": 4,
+          "citations": [
+            {
+              "nct_id": "NCT02366741",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "RADIATION"
+            },
+            {
+              "nct_id": "NCT01822496",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "RADIATION"
+            },
+            {
+              "nct_id": "NCT01836341",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "RADIATION"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 4,
+            "records": [
+              {
+                "nct_id": "NCT02366741",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "RADIATION",
+                "brief_title": "Neurocognitive Function After Prophylactic Cranial Irradiation & Hippocampal Sparing in LD SCLC Patients - a Pilot Study"
+              },
+              {
+                "nct_id": "NCT01822496",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "RADIATION",
+                "brief_title": "Erlotinib Hydrochloride or Crizotinib and Chemoradiation Therapy in Treating Patients With Stage III Non-small Cell Lung Cancer"
+              },
+              {
+                "nct_id": "NCT01836341",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "RADIATION",
+                "brief_title": "Afatinib In Combination With Cisplatin Or Carboplatin + Pemetrexed In Patients With EGFR-Mutant Lung Cancers Undergoing Definitive Chemoradiation"
+              },
+              {
+                "nct_id": "NCT05353257",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "RADIATION",
+                "brief_title": "A Study to Evaluate the Efficacy and Safety of Serplulimab in Combination With Chemotherapy and Concurrent Radiotherapy in Patients With Limited-Stage Small Cell Lung Cancer"
+              }
+            ]
+          }
+        },
+        {
+          "intervention_type": "Not Available",
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT06496386",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "Not Available"
+            },
+            {
+              "nct_id": "NCT01493739",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "Not Available"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT06496386",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "Not Available",
+                "brief_title": "Robotic Assisted Major Lung Resection in Elderly Patients"
+              },
+              {
+                "nct_id": "NCT01493739",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "Not Available",
+                "brief_title": "EBUS-TBNA for Diagnosis of Mediastinal Lymphadenopathy"
+              }
+            ]
+          }
+        },
+        {
+          "intervention_type": "BIOLOGICAL",
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT04607954",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "BIOLOGICAL"
+            },
+            {
+              "nct_id": "NCT01950156",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "BIOLOGICAL"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT04607954",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "BIOLOGICAL",
+                "brief_title": "Durvalumab and Lurbinectedin for the Treatment of Relapsed or Refractory Small Cell Lung Cancer"
+              },
+              {
+                "nct_id": "NCT01950156",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "BIOLOGICAL",
+                "brief_title": "Safety and Efficacy Study of Epitope Peptide To Treat HLA-A*24 Disease Controlled Advanced Non-small Cell Lung Cancer"
+              }
+            ]
+          }
+        },
+        {
+          "intervention_type": "PROCEDURE",
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT06721286",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "PROCEDURE"
+            },
+            {
+              "nct_id": "NCT01408212",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "PROCEDURE"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT06721286",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "PROCEDURE",
+                "brief_title": "Toripalimab Combined With Gemcitabine and Cisplatin (GemCis) as Preoperative Neoadjuvant Therapy for Resectable Intrahepatic Cholangiocarcinoma"
+              },
+              {
+                "nct_id": "NCT01408212",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "PROCEDURE",
+                "brief_title": "Effectiveness of Additional Acupuncture Therapy for Lung Cancer Patients"
+              }
+            ]
+          }
+        },
+        {
+          "intervention_type": "BEHAVIORAL",
+          "trial_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT07168629",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "BEHAVIORAL"
+            },
+            {
+              "nct_id": "NCT03215537",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "BEHAVIORAL"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 2,
+            "records": [
+              {
+                "nct_id": "NCT07168629",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "BEHAVIORAL",
+                "brief_title": "A Community Health Worker Intervention to Improve Lung Cancer Screening Uptake in Community Health Centers"
+              },
+              {
+                "nct_id": "NCT03215537",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "BEHAVIORAL",
+                "brief_title": "Development of Patient Tailored Guideline of Physical Activity for Lung Cancer"
+              }
+            ]
+          }
+        },
+        {
+          "intervention_type": "OTHER",
+          "trial_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT07168629",
+              "field": "protocolSection.armsInterventionsModule.interventions.type",
+              "excerpt": "OTHER"
+            }
+          ],
+          "evidence": {
+            "supporting_record_count": 1,
+            "records": [
+              {
+                "nct_id": "NCT07168629",
+                "field": "protocolSection.armsInterventionsModule.interventions.type",
+                "value": "OTHER",
+                "brief_title": "A Community Health Worker Intervention to Improve Lung Cancer Screening Uptake in Community Health Centers"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "query_interpretation": {
+        "intent": "intervention_type_distribution",
+        "visualization_type": "bar_chart",
+        "filters": {
+          "drug_name": null,
+          "compare_drug_name": null,
+          "condition": "Lung Cancer",
+          "trial_phase": null,
+          "sponsor": null,
+          "country": null,
+          "start_year": null,
+          "end_year": null,
+          "overall_status": null,
+          "max_studies": 20
+        },
+        "planner": "llm"
+      },
+      "study_count": 20,
+      "citation_policy": "Each aggregated datum includes up to 3 compact representative citations and full evidence records within the retrieved max_studies dataset.",
+      "limitations": [
+        "Counts are computed from studies returned by the ClinicalTrials.gov API.",
+        "The current planner uses deterministic rules to reduce hallucination risk.",
+        "Compact citations are capped, while evidence records provide full traceability within the retrieved dataset."
+      ]
+    }
+  }
